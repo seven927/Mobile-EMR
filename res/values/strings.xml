@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Mobile EMR</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="launch">Loading&#8230;</string>
+    <string name="user">Account:</string>
+    <string name="userhint">Email/Username</string>
+    <string name="pwd">password:</string>
+    <string name="login">Sign in</string>
+    <string name="first">First Name</string>
+    <string name="last">Last Name</string>
+    <string name="gender">Gender</string>
+    <string name="birth">Birth</string>
+    <string name="phone">Phone</string>
+    <string name="address">Address</string>
+    <string name="blood">Blood Type</string>
+    <string name="height">Height</string>
+    <string name="weight">Weight</string>
+    <string name="examination">Last Examination</string>
+    <string name="left">Basic Info</string>
+	<string name="right">Medic Info</string>
+
+</resources>
