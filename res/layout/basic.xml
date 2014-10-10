@@ -1,15 +1,19 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="fill_parent"
-    android:layout_height="fill_parent" >
+    android:layout_height="fill_parent" 
+    android:background="@drawable/ic_background"
+    android:focusable="true" 
+	android:focusableInTouchMode="true" 
+    >
 
     <TextView
         android:id="@+id/txtFirstName"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentTop="true"
         android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
         android:text="@string/first"
+        android:textStyle="bold"
         android:textAppearance="?android:attr/textAppearanceLarge" />
 
     <EditText
@@ -19,18 +23,22 @@
         android:layout_alignBottom="@+id/txtFirstName"
         android:layout_marginLeft="14dp"
         android:layout_toRightOf="@+id/txtFirstName"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/editbox_background"
         android:ems="10"
         android:inputType="textPersonName" >
+        
     </EditText>
 
     <TextView
         android:id="@+id/txtLastName"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentLeft="true"
+        android:layout_alignLeft="@+id/txtFirstName"
         android:layout_below="@+id/editFirstName"
         android:layout_marginTop="31dp"
         android:text="@string/last"
+        android:textStyle="bold"
         android:textAppearance="?android:attr/textAppearanceLarge" />
 
     <EditText
@@ -38,18 +46,21 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignLeft="@+id/editFirstName"
+        android:layout_alignRight="@+id/editFirstName"
         android:layout_alignBottom="@+id/txtLastName"
         android:ems="10"
+        android:background="@drawable/editbox_background"
         android:inputType="textPersonName" />
 
     <TextView
         android:id="@+id/txtGender"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentLeft="true"
+        android:layout_alignLeft="@+id/txtFirstName"
         android:layout_below="@+id/txtLastName"
         android:layout_marginTop="31dp"
         android:text="@string/gender"
+        android:textStyle="bold"
         android:textAppearance="?android:attr/textAppearanceLarge" />
 
     <EditText
@@ -57,18 +68,21 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignLeft="@+id/editLastName"
+        android:layout_alignRight="@+id/editFirstName"
         android:layout_alignBottom="@+id/txtGender"
         android:inputType="text"
+        android:background="@drawable/editbox_background"
         android:ems="10" />
     
      <TextView
         android:id="@+id/txtBirth"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentLeft="true"
+        android:layout_alignLeft="@+id/txtFirstName"
         android:layout_below="@+id/txtGender"
         android:layout_marginTop="31dp"
         android:text="@string/birth"
+        android:textStyle="bold"
         android:textAppearance="?android:attr/textAppearanceLarge" />
     
     <EditText
@@ -76,8 +90,10 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignBottom="@+id/txtBirth"
+        android:layout_alignRight="@+id/editFirstName"
         android:layout_alignLeft="@+id/editGender"
         android:ems="10"
+        android:background="@drawable/editbox_background"
         android:inputType="date" >
     </EditText>
 
@@ -85,10 +101,11 @@
         android:id="@+id/txtPhone"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentLeft="true"
+        android:layout_alignLeft="@+id/txtFirstName"
         android:layout_below="@+id/txtBirth"
         android:layout_marginTop="31dp"
         android:text="@string/phone"
+        android:textStyle="bold"
         android:textAppearance="?android:attr/textAppearanceLarge" />
 
     <EditText
@@ -96,18 +113,21 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignLeft="@+id/editGender"
+        android:layout_alignRight="@+id/editFirstName"
         android:layout_alignBottom="@+id/txtPhone"
         android:ems="10"
+        android:background="@drawable/editbox_background"
         android:inputType="phone" />
 
     <TextView
         android:id="@+id/txtAddress"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentLeft="true"
+        android:layout_alignLeft="@+id/txtFirstName"
         android:layout_below="@+id/txtPhone"
         android:layout_marginTop="31dp"
         android:text="@string/address"
+        android:textStyle="bold"
         android:textAppearance="?android:attr/textAppearanceLarge" />
 
     <EditText
@@ -115,8 +135,10 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignLeft="@+id/editPhone"
+        android:layout_alignRight="@+id/editFirstName"
         android:layout_alignBottom="@+id/txtAddress"
         android:ems="10"
+        android:background="@drawable/editbox_background"
         android:inputType="textPostalAddress" />
 
 </RelativeLayout>

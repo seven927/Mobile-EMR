@@ -1,15 +1,16 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="fill_parent"
-    android:layout_height="fill_parent" >
+    android:layout_height="fill_parent" 
+    android:background="@drawable/ic_background">
 
     <TextView
         android:id="@+id/txtBlood"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentTop="true"
+       	android:layout_marginLeft="20dp"
         android:layout_marginTop="50dp"
         android:text="@string/blood"
+        android:textStyle="bold"
         android:textAppearance="?android:attr/textAppearanceLarge" />
 
     <EditText
@@ -17,9 +18,11 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignBottom="@+id/txtBlood"
-        android:layout_marginLeft="38dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
         android:layout_toRightOf="@+id/txtBlood"
         android:inputType="text"
+        android:background="@drawable/editbox_background"
         android:ems="10" >
     </EditText>
 
@@ -27,10 +30,11 @@
         android:id="@+id/txtHeight"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentLeft="true"
+        android:layout_alignLeft="@+id/txtBlood"
         android:layout_below="@+id/txtBlood"
         android:layout_marginTop="50dp"
         android:text="@string/height"
+        android:textStyle="bold"
         android:textAppearance="?android:attr/textAppearanceLarge" />
 
     <EditText
@@ -38,18 +42,21 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignBottom="@+id/txtHeight"
+        android:layout_alignRight="@+id/editBlood"
         android:layout_alignLeft="@+id/editBlood"
         android:ems="10"
+        android:background="@drawable/editbox_background"
         android:inputType="number" />
 
     <TextView
         android:id="@+id/txtWeight"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentLeft="true"
+        android:layout_alignLeft="@+id/txtBlood"
         android:layout_below="@+id/txtHeight"
         android:layout_marginTop="50dp"
         android:text="@string/weight"
+        android:textStyle="bold"
         android:textAppearance="?android:attr/textAppearanceLarge" />
 
     <EditText
@@ -57,28 +64,33 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignBottom="@+id/txtWeight"
+        android:layout_alignRight="@+id/editBlood"
         android:layout_alignLeft="@+id/editHeight"
         android:ems="10"
+        android:background="@drawable/editbox_background"
         android:inputType="number" />
 
     <TextView
         android:id="@+id/txtExamination"
-        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentLeft="true"
+        android:layout_width="130dp"
+        android:layout_alignLeft="@+id/txtBlood"
         android:layout_below="@+id/txtWeight"
         android:layout_marginTop="50dp"
         android:text="@string/examination"
+        android:singleLine="false"
+        android:textStyle="bold"
         android:textAppearance="?android:attr/textAppearanceLarge" />
 
     <EditText
         android:id="@+id/editExamination"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/editBlood"
+        android:layout_alignRight="@+id/editBlood"
         android:layout_alignBottom="@+id/txtExamination"
-        android:layout_marginLeft="20dp"
-        android:layout_toRightOf="@+id/txtExamination"
         android:ems="10"
+        android:background="@drawable/editbox_background"
         android:inputType="date" />
 
 </RelativeLayout>

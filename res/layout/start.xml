@@ -10,6 +10,8 @@
         android:layout_height="match_parent"
         android:gravity="center"
         android:text="@string/launch"
+        android:textColor="#ffffff"
+        android:textStyle="bold"
         android:textAppearance="?android:attr/textAppearanceLarge" />
 
 </LinearLayout>

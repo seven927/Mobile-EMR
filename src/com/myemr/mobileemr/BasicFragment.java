@@ -88,11 +88,17 @@ public class BasicFragment extends Fragment{
 		public void handleMessage(Message msg){
 			String[] result= msg.obj.toString().split(",");
 			efname.setText(result[0]);
+//			efname.setEnabled(false);
 			elname.setText(result[1]);
+//			elname.setEnabled(false);
 			egender.setText(result[2]);
+//			egender.setEnabled(false);
 			ebirth.setText(result[3]);
+//			ebirth.setEnabled(false);
 			ephone.setText(result[4]);
+//			ephone.setEnabled(false);
 			eaddress.setText(result[5]);
+//			eaddress.setEnabled(false);
 		}
 	};
 	
