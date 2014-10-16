@@ -19,9 +19,11 @@ import android.os.Handler;
 import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.MotionEvent;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.RelativeLayout;
 import android.widget.Toast;
 
 public class EMRActivity extends ActionBarActivity {
@@ -37,12 +39,14 @@ public class EMRActivity extends ActionBarActivity {
 	private EditText etxtPassword;
 	private String username;
 	private String password;
+	private RelativeLayout relative;
 	
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_emr);
 		btn=(Button)findViewById(R.id.btnLogin);
+		relative=(RelativeLayout)findViewById(R.id.relative);
 		etxtUsername = (EditText)findViewById(R.id.editAccount);
         etxtPassword = (EditText)findViewById(R.id.editPwd);
 		btn.setOnClickListener(new View.OnClickListener() {
@@ -60,6 +64,16 @@ public class EMRActivity extends ActionBarActivity {
 					thread.start();
 				}
 
+			}
+		});
+		
+		relative.setOnTouchListener(new View.OnTouchListener() {
+			
+			@Override
+			public boolean onTouch(View v, MotionEvent event) {
+				// TODO Auto-generated method stub
+				v.requestFocus();
+				return true;
 			}
 		});
 	}

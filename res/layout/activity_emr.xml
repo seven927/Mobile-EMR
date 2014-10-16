@@ -1,7 +1,10 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/relative"
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
-    android:background="@drawable/ic_background">
+    android:background="@drawable/ic_background"
+    android:focusable="true" 
+	android:focusableInTouchMode="true" >
 
     <TextView
         android:id="@+id/txtAccount"
@@ -15,7 +18,7 @@
         android:text="@string/user"
         android:textAppearance="?android:attr/textAppearanceLarge" />
 
-    <EditText
+  	<EditText
         android:id="@+id/editAccount"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -26,8 +29,7 @@
         android:layout_marginRight="20dip"
         android:hint="@string/userhint"
         android:ems="20">
-    	
-    	<requestFocus />
+   
     </EditText>
 
     <TextView
@@ -62,7 +64,7 @@
         android:layout_below="@+id/editPwd"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="23dp"
-        android:background="@drawable/buttonstate"
+        android:background="@drawable/btn_default"
         android:text="@string/login" />
 
     <TextView
@@ -79,9 +81,20 @@
         android:id="@+id/imageFacebook"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/btnLogin"
         android:layout_alignParentBottom="true"
-        android:layout_alignRight="@+id/editPwd"
-        android:layout_marginBottom="23dp"
-        android:contentDescription="@string/follow"
+        android:layout_marginBottom="22dp"
+        android:layout_marginLeft="21dp"
+        android:contentDescription="@string/facebook"
         android:src="@drawable/ic_facebook" />
+
+    <ImageButton
+        android:id="@+id/imageTwitter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/imageFacebook"
+        android:layout_toRightOf="@+id/imageFacebook"
+        android:src="@drawable/ic_twitter" 
+        android:contentDescription="@string/twitter"/>
+
 </RelativeLayout>

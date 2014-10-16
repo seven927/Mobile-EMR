@@ -22,5 +22,6 @@
     <string name="left">Basic Info</string>
 	<string name="right">Medic Info</string>
 	<string name="forget">Forget password?</string>
-	<string name="follow">Follow us on Facebook</string>
+	<string name="facebook">Follow us on Facebook</string>
+	<string name="twitter">Follow us on Twitter</string>
 </resources>
