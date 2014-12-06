@@ -96,7 +96,7 @@ public class EMRActivity extends ActionBarActivity {
 	}
 	  
     // Generate hash value of password using MD5
-	public String hashMD5(String plainText){ 
+	private String hashMD5(String plainText){ 
 		try{
 			MessageDigest md = MessageDigest.getInstance("MD5");   
 			md.update(plainText.getBytes());   

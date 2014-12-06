@@ -86,6 +86,7 @@
         android:layout_marginBottom="22dp"
         android:layout_marginLeft="21dp"
         android:contentDescription="@string/facebook"
+        android:background="@drawable/facebookbackground"
         android:src="@drawable/ic_facebook" />
 
     <ImageButton
@@ -94,6 +95,7 @@
         android:layout_height="wrap_content"
         android:layout_alignTop="@+id/imageFacebook"
         android:layout_toRightOf="@+id/imageFacebook"
+        android:background="@drawable/twitterbackground"
         android:src="@drawable/ic_twitter" 
         android:contentDescription="@string/twitter"/>
 
